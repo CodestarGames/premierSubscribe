@@ -122,9 +122,8 @@
     <div class="img-container">
         <div class="van-cont">
             <div class="bubble left">
-                <div id="alert-message" style="margin-bottom: 16px;">Some message!</div>
-                <div id="alert-user-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus suscipit non ea debitis expedita. Perspiciatis ea vero sapiente aspernatur qui id quisquam. Harum repudiandae quae dolorum maiores facere doloremque consectetur! </div>
-                
+                <div id="alert-message" style="margin-bottom: 16px;">{messageTemplate}</div>
+                <div id="alert-user-message">{userMessage}</div>
             </div>
             <div class="img-Van"></div>
         </div>
@@ -169,17 +168,12 @@
                     $('.img-Connor-norm').css({opacity: 1})
                 })
                 .animate({"top": "86px"}, 80)
-                
                 .animate({"left": 120 + "%"}, 2000, () => {
                     $('.van-cont')
                     .animate({"left": 120 + "%"}, 1500)
-                })
-            })
+                });
 
-                    https://raw.githubusercontent.com/CodestarGames/premierDonation/master/images/
-
-                    //7500
-                    //play exit animation
+            });
 
 
         })
