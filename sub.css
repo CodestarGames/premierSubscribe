@@ -23,11 +23,7 @@ html {
 .hidden {
     opacity: 0;
 }
-  
 
-        body {
-            background: cornflowerblue;
-        }
         .goal-cont {
             color: #000 !important;
             font-family: "Super Mario World" !important;
@@ -59,6 +55,27 @@ html {
             width: 100%;
             height: 100%;
             position: absolute;
+            background: url(https://raw.githubusercontent.com/CodestarGames/premierSubscribe/master/images/VanSpriteOpenDrive.gif) no-repeat;
+       
+        }
+
+        .img-Van-Opening {
+            opacity: 0;
+            z-index: 100;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: url(https://raw.githubusercontent.com/CodestarGames/premierSubscribe/master/images/VanSpriteOpening.gif) no-repeat;
+       
+        }
+        .img-Van-OpenDrive {
+            opacity: 0;
+            z-index: 100;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: url(https://raw.githubusercontent.com/CodestarGames/premierSubscribe/master/images/VanSpriteOpenDrive.gif) no-repeat;
+       
         }
 
         .img-Connor {

@@ -1,6 +1,5 @@
 
 
-
 function handleAnimate() {
     var resURL = 'https://raw.githubusercontent.com/CodestarGames/premierSubscribe/master/images'
     // $('.img-Van')
@@ -12,12 +11,13 @@ function handleAnimate() {
     $('.img-Connor-norm').css({background: `url(${resURL}/ConnorSprite.gif) no-repeat`, opacity: 0})
 
     $('.bikers-cont')
-    .animate({"left": 45 + "%"}, 1500, () => {
-        $('.img-Van').css({background: `url(${resURL}/VanSprite.gif) no-repeat`})
+    .animate({"left": 45 + "%"}, 1000, () => {
+        $('.img-Van').css({background: `url(${resURL}/VanSpriteOpenDrive.gif) no-repeat`})
         $('.van-cont')
-        .animate({"left": $('.bikers-cont').position().left - 240}, 1000, () => {
+        .animate({"left": $('.bikers-cont').position().left - 240}, 800, () => {
+
             $(".bubble").css({"opacity": 1});
-            $('.bikers-cont').delay(4500)
+            $('.bikers-cont').delay(3000)
             .animate({"top": "86px"}, 1, () => {
                 $(".bubble").css({"opacity": 0});
             })
@@ -27,11 +27,11 @@ function handleAnimate() {
                 $('.img-Chris-norm').css({opacity: 1})
                 $('.img-Connor-norm').css({opacity: 1})
             })
-            .animate({"top": "86px"}, 80)
-            .animate({"left": 120 + "%"}, 2000, () => {
+            .animate({"top": "86px"}, 80, () => {
                 $('.van-cont')
-                .animate({"left": 120 + "%"}, 1500)
-            });
+                .animate({"left": 120 + "%"}, 1200)
+            })
+            .animate({"left": 120 + "%"}, 1000);
 
         });
 
@@ -46,4 +46,3 @@ function handleAnimate() {
 setTimeout(() => {
     handleAnimate();
 }, 750)
-
